@@ -64,6 +64,8 @@ a:hover .icon-por,.icon-por:hover{background-position:-14px -280px;}/*档案袋*
 .icon-nnnext:hover,a:hover .icon-nnnext{background-position:-14px -350px;}
 .icon-nnext{background-position:0 -322px;}
 .icon-nnext:hover,a:hover .icon-nnext{background-position:-14px -322px;}
+.icon-stop{background-position:0 -364px;}
+.icon-stop:hover,a:hover .icon-stop{background-position:-14px -364px;}
 /*搜索框插件*/
 .AppSequence{width:90px;height:30px;position: relative;}
 .AppSequence a{line-height:30px;color:#000;}
@@ -146,8 +148,9 @@ select.edit{padding-bottom:2px;height:auto;}
 .has-success .ThemeInput, .has-success .ThemeText,.has-success .ThemeInput:hover, .has-success .ThemeText:hover{border-color:#468847;}
 /*日历控件*/
 .Clander{position: relative;}
-
-
+/*弹出层通用的table*/
+.PopTable th{padding-right:20px;text-align:right;font-size: 14px;}
+.PopTable td{height:40px;padding-left:5px;}
 
 
 

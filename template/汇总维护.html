@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>汇总维护</title>
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/ar-style.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme1.css" type="text/css">
+</head>
+<body>
+<div class="AppLayout border-solid">
+    <!--app title begin-->
+    <div class="AppTopBar border-solid border-bottom clearfix">
+        <div class="TopBarl floatleft">
+            <span class="AppLogo"><img src="../img/ico-8.png"></span>
+            <em class="font18">员工考勤</em>
+        </div>
+    </div>
+    <!--app title over-->
+    <!--一级导航begin-->
+    <div class="AppNav border-solid border-bottom clearfix">
+        <ul class="Nav-ul font14 clearfix">
+            <li class="current"><a href="#">考勤维护</a></li>
+            <li><a href="#">考勤查看</a></li>
+            <li><a href="#">报表统计</a></li>
+            <li><a href="#">我的考勤</a></li>
+            <li class="AppSet"><a href="#"><em class="icon icon-set"></em>应用设置</a></li>
+        </ul>
+    </div>
+    <!--一级导航over-->
+    <!--二级导航begin-->
+    <div class="AppNavT border-solid border-bottom clearfix">
+        <ul class="font16 clearfix floatleft">
+            <li><a href="#">考勤日历</a></li>
+            <li class="current"><a href="#">刷卡记录</a></li>
+            <li><a href="#">维护汇总</a></li>
+        </ul>
+    </div>
+    <!--二级导航over-->
+    <!--二级导航begin-->
+    <div class="AppNavT clearfix">
+        <ul class="font16 clearfix floatleft">
+            <li class="current">考勤月份</li>
+            <li>
+                <select class="ThemeSelect">
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                </select>
+            </li>
+        </ul>
+        <!--排序搜索begin-->
+        <div class="floatright clearfix">
+            <!--排序begin-->
+            <div class="AppSequence floatleft marr10"><!--加current下拉框显示-->
+                <a href="#">按时间排序</a>
+                <em class="app-icon ico-toogle"></em>
+                <div class="down-list">
+                    <ul>
+                        <li>按时间排序</li>
+                        <li>按类别排序</li>
+                        <li>按紧急排序</li>
+                    </ul>
+                </div>
+            </div>
+            <!--排序over-->
+            <!--搜索框begin-->
+            <div class="search-area floatleft">
+                <input type="text" class="search-int">
+                <em class="line-y"></em>
+                <a href="#" class="search-btn"><i class="app-icon ico-search"></i></a>
+            </div>
+            <!--搜索框over-->
+        </div>
+        <!--排序搜索over-->
+    </div>
+    <!--二级导航over-->
+    <!--app 主要区域begin-->
+    <div class="AppMain clearfix">
+        <table class="Pcard border-solid BgColor" width="100%">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th width="120">部门</th>
+                    <th>年</th>
+                    <th>月</th>
+                    <th>考勤项目</th>
+                    <th>考勤值</th>
+                    <th width="70">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>王振佳</td>
+                    <td>开发部</td>
+                    <td>2013</td>
+                    <td>12</td>
+                    <td>迟到</td>
+                    <td>2次</td>
+                    <td><a href="#" class="icon icon-edit"></a></td>
+                </tr>
+                <tr>
+                    <td>刘德华</td>
+                    <td>开发部</td>
+                    <td>2013</td>
+                    <td>12</td>
+                    <td>迟到</td>
+                    <td>20次</td>
+                    <td><a href="#" class="icon icon-edit"></a></td>
+                </tr>
+                <tr>
+                    <td>王振佳</td>
+                    <td>开发部</td>
+                    <td>2013</td>
+                    <td>12</td>
+                    <td>迟到</td>
+                    <td>2次</td>
+                    <td><a href="#" class="icon icon-edit"></a></td>
+                </tr>
+                <tr>
+                    <td>王振佳</td>
+                    <td>开发部</td>
+                    <td>2013</td>
+                    <td>12</td>
+                    <td>迟到</td>
+                    <td>2次</td>
+                    <td><a href="#" class="icon icon-edit"></a></td>
+                </tr>
+                <tr>
+                    <td>王振佳</td>
+                    <td>开发部</td>
+                    <td>2013</td>
+                    <td>12</td>
+                    <td>迟到</td>
+                    <td>2次</td>
+                    <td><a href="#" class="icon icon-edit"></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mart30 clearfix">
+            <!--分页begin-->
+            <div class="aligncenter clearfix">
+                <div class="pageTop">
+                    <a href="#" class="prev no">&lt;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <span class="current">3</span>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next">&gt;</a>
+                </div>
+            </div>
+            <!--分页over-->
+            <p class="alignright" style="margin-top: -24px;">
+                <a class="button">汇总锁定</a>
+            </p>
+        </div>
+    </div>
+    <!--app 主要区域over-->
+</div>
+<!--弹出层begin-->
+<div class="AppPop" style="left:50%;top:200px;margin-left:-200px;width:400px;">
+  <div class="PopInner">
+    <div class="PopTitle">
+        <span>考勤计算</span>
+        <span class="off">×</span>
+    </div>
+    <div class="PopMain clearfix">
+        <table class="PopTable marl20">
+            <tr>
+                <th class="Themetxt-color">开始日期</th>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>2013年</option>
+                        <option>2012年</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>12月</option>
+                        <option>11月</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>5日</option>
+                        <option>4日</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="Themetxt-color">结束日期</th>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>2013年</option>
+                        <option>2012年</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>12月</option>
+                        <option>11月</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>5日</option>
+                        <option>4日</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="Themetxt-color">员工</th>
+                <td colspan="3">
+                    <!--搜索框begin-->
+                    <div class="search-area">
+                        <input type="text" class="search-int">
+                        <em class="line-y"></em>
+                        <a href="#" class="search-btn"><i class="app-icon ico-search"></i></a>
+                    </div>
+                    <!--搜索框over-->
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="3" style="height:10px;">（不填写默认计算所有员工）</td>
+            </tr>
+        </table>
+        <p class="alignright mart20 marr5"><a class="button">计算</a></p>
+    </div>
+  </div>
+</div>
+<!--弹出层over-->
+</body>
+</html>
