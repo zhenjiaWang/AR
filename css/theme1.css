@@ -3,7 +3,7 @@
 .word-ser li.current a,.button,.edit,.PopLeft ul li a.current,.ThemeInput:hover,.ThemeText:hover{border-color:#0066CC;}/*主色*/
 .PerList li,.ThemeSelect,.ThemeInput,.ThemeText{border-color:#E7E7E7;}/*灰色边框*/
 .AppTopBar,.AppNavT ul li a:hover,.AppNavT ul li.current a,.PopTitle,.PerName,
-.a-link,.invite:hover,.invite,.Nav-ul li.AppSet a,.Nav-ul li.AppSet.current a,.SearchResults dd a em,.CardBt a,.Themetxt-color,.off,.Pcard thead th{color:#0066CC;}
+.a-link,.invite:hover,.invite,.Nav-ul li.AppSet a,.Nav-ul li.AppSet.current a,.SearchResults dd a em,.CardBt a,.Themetxt-color,.off,.Pcard thead th{color:#0066CC!important;}
 {color:#004488;}/*颜色-深色*/
 /*背景色*/
 .AppTopBar,.word-ser li a:hover,.PerList li,.PopLeft ul li a:hover,.WorkStory tbody tr:hover,.WorkStory thead th,.TabClander,.BgColor{background-color:#EDF4FB;}/*浅色*/
