@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>刷卡记录-按人查看2</title>
+    <link rel="stylesheet" href="../../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../css/ar-style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/theme1.css" type="text/css">
+</head>
+<body>
+<div class="AppLayout border-solid">
+    <!--app title begin-->
+    <div class="AppTopBar border-solid border-bottom clearfix">
+        <div class="TopBarl floatleft">
+            <span class="AppLogo"><img src="../../img/ico-8.png"></span>
+            <em class="font18">员工考勤</em>
+        </div>
+    </div>
+    <!--app title over-->
+    <!--一级导航begin-->
+    <div class="AppNav border-solid border-bottom clearfix">
+        <ul class="Nav-ul font14 clearfix">
+            <li class="current"><a href="#">考勤维护</a></li>
+            <li><a href="#">考勤查看</a></li>
+            <li><a href="#">报表统计</a></li>
+            <li><a href="#">我的考勤</a></li>
+            <li class="AppSet"><a href="#"><em class="icon icon-set"></em>应用设置</a></li>
+        </ul>
+    </div>
+    <!--一级导航over-->
+    <!--二级导航begin-->
+    <div class="AppNavT border-solid border-bottom clearfix">
+        <ul class="font16 clearfix floatleft">
+            <li><a href="#">考勤日历</a></li>
+            <li class="current"><a href="#">刷卡记录</a></li>
+            <li><a href="#">汇总维护</a></li>
+        </ul>
+    </div>
+    <!--二级导航over-->
+    <!--app 主要区域begin-->
+    <div class="AppMain clearfix">
+        <div class="clearfix mart10">
+            <div class="search-area floatright marr25">
+                <input type="text" class="search-int">
+                <em class="line-y"></em>
+                <a title="清除搜索内容" class="off-clear" href="#">×</a>
+                <a class="search-btn" href="#"><i class="app-icon ico-search"></i></a>
+                <!--搜索结果框begin-->
+                <div class="SearchResults" style="display:none;">
+                    <dl>
+                        <div class="loading"><img src="../../img/ajax-loader.gif">数据加载中，请稍后...</div><!--这个可以到处用-->
+                        <dd><a href="#"><em>@王振佳将您</em>负责的任务填写完整个人信息托付给了王振佳托付给了王振佳</a></dd>
+                        <dd><a href="#">务填写完整个人信息托付给了王振佳</a></dd>
+                        <dd><a href="#">将您负责的任务填写完整个人信息托付给了王振佳</a></dd>
+                        <dd><a href="#">@王振佳将您负责的任务填写完整个人信息托付给了王振佳</a></dd>
+                        <dd><a href="#">务填写完整个人信息托付给了王振佳</a></dd>
+                    </dl>
+                </div>
+                <!--搜索结果框over-->
+            </div>
+            <!--排序begin-->
+            <div class="AppSequence floatright marr20 current"><!--加current下拉框显示-->
+                <a href="#">按姓名排序</a>
+                <em class="app-icon ico-toogle"></em>
+                <div class="down-list">
+                    <ul>
+                        <li>按部门排序</li>
+                        <li>按班组排序</li>
+                    </ul>
+                </div>
+              </div>
+            <!--排序over-->
+            <!--按钮组begin-->
+            <div class="btn-group floatrleft marl20 clearfix">
+                <a class="button">计算考勤</a>
+                <a class="button">锁定考勤</a>
+                <a class="button">生成汇总</a>
+            </div>
+            <!--按钮组over-->
+        </div>
+        <!--个人考勤日历 begin-->
+        <div class="AR-Clander mart20">
+            <!--切换日历beign-->
+            <div class="CLswitch aligncenter clearfix">
+                <a href="#" class="floatleft font14 nomar marr20 Themetxt-color"><em class="icon icon-back"></em>返回</a>
+                <span class="font14 floatleft">
+                    <span class="Themetxt-color"><em class="icon icon-user"></em> 王振佳</span>
+                    <span class="marl20 marr20">技术开发部CTO</span>
+                    <span>早4晚12</span>
+                </span>
+                <span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
+                    <span class="Clmonth current"><!---Clmonth加current 你懂得！-->
+                        <em>2013年</em>
+                        <dl class="clearfix">
+                            <dd>2010</dd>
+                            <dd>2012</dd>
+                            <dd>2013</dd>
+                            <dd>2014</dd>
+                            <dd>2015</dd>
+                            <dd>2016</dd>
+                            <dd>2017</dd>
+                            <dd>2018</dd>
+                            <dd>2019</dd>
+                            <dd>2020</dd>
+                            <dd>2021</dd>
+                        </dl>
+                    </span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
+                </span>
+                <span class="marl20">
+                    <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
+                    <span class="Clmonth">
+                        <em>12月</em>
+                        <dl class="clearfix">
+                            <dd>1月</dd>
+                            <dd>2月</dd>
+                            <dd>3月</dd>
+                            <dd>4月</dd>
+                            <dd>5月</dd>
+                            <dd>6月</dd>
+                            <dd>7月</dd>
+                            <dd>8月</dd>
+                            <dd>9月</dd>
+                            <dd>10月</dd>
+                            <dd>11月</dd>
+                            <dd>12月</dd>
+                        </dl>
+                    </span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
+                </span>
+            </div>
+            <!--切换日历over-->
+            <table class="TabClander TabClander0f mart10" width="100%">
+                <thead>
+                    <tr>
+                        <th>星期日</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                        <th>星期六</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rest">
+                          <div>
+                            <em>1</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>2</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>3</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>4</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>5</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="today">
+                            <em>6</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>病假</p>
+                          </div>
+                        </td>
+                        <td class="rest">
+                          <div>
+                            <em>7</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rest">
+                          <div>
+                            <em>8</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>9</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>10</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>11</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>12</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>13</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>病假</p>
+                          </div>
+                        </td>
+                        <td class="rest">
+                          <div>
+                            <em>14</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rest">
+                          <div>
+                            <em>15</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>16</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>17</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>18</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>19</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>20</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>二婚假</p>
+                          </div>
+                        </td>
+                        <td class="rest">
+                          <div>
+                            <em>21</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rest">
+                          <div>
+                            <em>22</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>23</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>24</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>蜜月假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>25</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>26</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>27</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>病假</p>
+                          </div>
+                        </td>
+                        <td class="rest">
+                          <div>
+                            <em>28</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rest">
+                          <div>
+                            <em>29</em>
+                            <span>休息</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>30</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <em>31</em>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--个人考勤日历 begin-->
+    </div>
+    <!--app 主要区域over-->
+</div>
+</body>
+</html>

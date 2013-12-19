@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>刷卡记录-按人查看1</title>
+    <title>考勤查看-个人考勤</title>
     <link rel="stylesheet" href="../../css/global.css" type="text/css">
     <link rel="stylesheet" href="../../css/styles.css" type="text/css">
     <link rel="stylesheet" href="../../css/ar-style.css" type="text/css">
@@ -22,8 +22,8 @@
     <!--一级导航begin-->
     <div class="AppNav border-solid border-bottom clearfix">
         <ul class="Nav-ul font14 clearfix">
-            <li class="current"><a href="#">考勤维护</a></li>
-            <li><a href="#">考勤查看</a></li>
+            <li><a href="#">考勤维护</a></li>
+            <li class="current"><a href="#">考勤查看</a></li>
             <li><a href="#">报表统计</a></li>
             <li><a href="#">我的考勤</a></li>
             <li class="AppSet"><a href="#"><em class="icon icon-set"></em>应用设置</a></li>
@@ -33,22 +33,22 @@
     <!--二级导航begin-->
     <div class="AppNavT border-solid border-bottom clearfix">
         <ul class="font16 clearfix floatleft">
-            <li><a href="#">考勤日历</a></li>
-            <li class="current"><a href="#">刷卡记录</a></li>
-            <li><a href="#">汇总维护</a></li>
+            <li><a href="#">考勤概况</a></li>
+            <li class="current"><a href="#">个人考勤</a></li>
+            <li><a href="#">部门考勤</a></li>
         </ul>
     </div>
     <!--二级导航over-->
     <!--app 主要区域begin-->
     <div class="AppMain clearfix">
         <div class="clearfix mart10">
-            <div class="search-area floatleft">
+            <div class="search-area floatright marr25">
                 <input type="text" class="search-int">
                 <em class="line-y"></em>
                 <a title="清除搜索内容" class="off-clear" href="#">×</a>
                 <a class="search-btn" href="#"><i class="app-icon ico-search"></i></a>
                 <!--搜索结果框begin-->
-                <div class="SearchResults" style="left:-1px;">
+                <div class="SearchResults" style="display:none;">
                     <dl>
                         <div class="loading"><img src="../../img/ajax-loader.gif">数据加载中，请稍后...</div><!--这个可以到处用-->
                         <dd><a href="#"><em>@王振佳将您</em>负责的任务填写完整个人信息托付给了王振佳托付给了王振佳</a></dd>
@@ -60,14 +60,8 @@
                 </div>
                 <!--搜索结果框over-->
             </div>
-            <!--按钮组begin-->
-            <div class="btn-group floatleft marl20 clearfix">
-                <a class="button">计算考勤</a>
-                <a class="button">锁定考勤</a>
-            </div>
-            <!--按钮组over-->
             <!--排序begin-->
-            <div class="AppSequence floatright marr10 current"><!--加current下拉框显示-->
+            <div class="AppSequence floatright marr20 current"><!--加current下拉框显示-->
                 <a href="#">按姓名排序</a>
                 <em class="app-icon ico-toogle"></em>
                 <div class="down-list">

@@ -3,18 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>考勤维护-考勤日历</title>
-    <link rel="stylesheet" href="../css/global.css" type="text/css">
-    <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <link rel="stylesheet" href="../css/ar-style.css" type="text/css">
-    <link rel="stylesheet" href="../css/theme1.css" type="text/css">
+    <title>考勤查看-个人考勤明细</title>
+    <link rel="stylesheet" href="../../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../css/ar-style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/theme1.css" type="text/css">
 </head>
 <body>
 <div class="AppLayout border-solid">
     <!--app title begin-->
     <div class="AppTopBar border-solid border-bottom clearfix">
         <div class="TopBarl floatleft">
-            <span class="AppLogo"><img src="../img/ico-8.png"></span>
+            <span class="AppLogo"><img src="../../img/ico-8.png"></span>
             <em class="font18">员工考勤</em>
         </div>
     </div>
@@ -22,8 +22,8 @@
     <!--一级导航begin-->
     <div class="AppNav border-solid border-bottom clearfix">
         <ul class="Nav-ul font14 clearfix">
-            <li class="current"><a href="#">考勤维护</a></li>
-            <li><a href="#">考勤查看</a></li>
+            <li><a href="#">考勤维护</a></li>
+            <li class="current"><a href="#">考勤查看</a></li>
             <li><a href="#">报表统计</a></li>
             <li><a href="#">我的考勤</a></li>
             <li class="AppSet"><a href="#"><em class="icon icon-set"></em>应用设置</a></li>
@@ -33,26 +33,68 @@
     <!--二级导航begin-->
     <div class="AppNavT border-solid border-bottom clearfix">
         <ul class="font16 clearfix floatleft">
-            <li class="current"><a href="#">考勤日历</a></li>
-            <li><a href="#">刷卡记录</a></li>
-            <li><a href="#">维护汇总</a></li>
+            <li><a href="#">考勤概况</a></li>
+            <li class="current"><a href="#">个人考勤</a></li>
+            <li><a href="#">部门考勤</a></li>
         </ul>
     </div>
     <!--二级导航over-->
     <!--app 主要区域begin-->
     <div class="AppMain clearfix">
-        <!--考勤日历begin-->
-        <div class="AR-Clander mart10">
+        <!--个人考勤日历 begin-->
+        <div class="AR-Clander mart20">
             <!--切换日历beign-->
             <div class="CLswitch aligncenter clearfix">
-                <a href="#" class="Themetxt-color floatleft"><em class="icon icon-ppprev"></em> 上一年</a>
-                <a href="#" class="Themetxt-color floatleft"><em class="icon icon-pprev"></em> 上一月</a>
-                <a href="#" class="Themetxt-color floatright">下一年 <em class="icon icon-nnnext"></em></a>
-                <a href="#" class="Themetxt-color floatright">下一月 <em class="icon icon-nnext"></em></a>
-                <span class="font14">2013年12月</span>
+                <a href="#" class="floatleft font14 nomar marr20 Themetxt-color"><em class="icon icon-back"></em>返回</a>
+                <span class="font14 floatleft">
+                    <span class="Themetxt-color"><em class="icon icon-user"></em> 王振佳</span>
+                    <span class="marl20 marr20">技术开发部CTO</span>
+                    <span>早4晚12</span>
+                </span>
+                <span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
+                    <span class="Clmonth current"><!---Clmonth加current 你懂得！-->
+                        <em>2013年</em>
+                        <dl class="clearfix">
+                            <dd>2010</dd>
+                            <dd>2012</dd>
+                            <dd>2013</dd>
+                            <dd>2014</dd>
+                            <dd>2015</dd>
+                            <dd>2016</dd>
+                            <dd>2017</dd>
+                            <dd>2018</dd>
+                            <dd>2019</dd>
+                            <dd>2020</dd>
+                            <dd>2021</dd>
+                        </dl>
+                    </span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
+                </span>
+                <span class="marl20">
+                    <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
+                    <span class="Clmonth">
+                        <em>12月</em>
+                        <dl class="clearfix">
+                            <dd>1月</dd>
+                            <dd>2月</dd>
+                            <dd>3月</dd>
+                            <dd>4月</dd>
+                            <dd>5月</dd>
+                            <dd>6月</dd>
+                            <dd>7月</dd>
+                            <dd>8月</dd>
+                            <dd>9月</dd>
+                            <dd>10月</dd>
+                            <dd>11月</dd>
+                            <dd>12月</dd>
+                        </dl>
+                    </span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
+                </span>
             </div>
             <!--切换日历over-->
-            <table class="TabClander mart20" width="100%">
+            <table class="TabClander TabClander0f mart10" width="100%">
                 <thead>
                     <tr>
                         <th>星期日</th>
@@ -75,32 +117,41 @@
                         <td>
                           <div>
                             <em>2</em>
-                            <span><a href="#" class="a-link">工作</a></span>
-                            <p>缺省考勤缺省考勤</p>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>3</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>4</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>5</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
                           </div>
                         </td>
                         <td>
                           <div class="today">
                             <em>6</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>病假</p>
                           </div>
                         </td>
                         <td class="rest">
@@ -120,31 +171,41 @@
                         <td>
                           <div>
                             <em>9</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>10</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>11</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>12</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>13</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>病假</p>
                           </div>
                         </td>
                         <td class="rest">
@@ -164,31 +225,41 @@
                         <td>
                           <div>
                             <em>16</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>17</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>18</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>19</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>20</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>二婚假</p>
                           </div>
                         </td>
                         <td class="rest">
@@ -208,31 +279,41 @@
                         <td>
                           <div>
                             <em>23</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>24</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>蜜月假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>25</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>离婚假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>26</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>出差</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>27</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>病假</p>
                           </div>
                         </td>
                         <td class="rest">
@@ -252,58 +333,30 @@
                         <td>
                           <div>
                             <em>30</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>产假</p>
                           </div>
                         </td>
                         <td>
                           <div>
                             <em>31</em>
-                            <span><a href="#" class="a-link">工作</a></span>
+                            <font class="begin">08:11</font>
+                            <font class="end">18:16</font>
+                            <p>事假</p>
                           </div>
                         </td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td> </td>
+                        <td> </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <!--考勤日历over-->
+        <!--个人考勤日历 begin-->
     </div>
     <!--app 主要区域over-->
 </div>
-<!--弹出层begin-->
-<div class="AppPop" style="left:50%;top:200px;margin-left:-200px;width:400px;display:none;">
-  <div class="PopInner">
-    <div class="PopTitle">
-        <span>2013年12月10日 日历设置</span>
-        <span class="off">×</span>
-    </div>
-    <div class="PopMain clearfix">
-        <table class="PopTable marl20">
-            <tr>
-                <th class="Themetxt-color">日历日期</th>
-                <td>2013-12-10</td>
-            </tr>
-            <tr>
-                <th class="Themetxt-color">日历类别</th>
-                <td>
-                    <select class="ThemeSelect">
-                        <option>工作</option>
-                        <option>休息</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th class="Themetxt-color">备注</th>
-                <td><textarea rows="4" cols="35" class="ThemeText"></textarea></td>
-            </tr>
-        </table>
-        <p class="alignright mart20 marr5"><a class="button">保存日历</a></p>
-    </div>
-  </div>
-</div>
-<!--弹出层over-->
 </body>
 </html>
