@@ -27,7 +27,7 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .aligncenter{text-align:center!important;}
 .alignright{text-align:right!important;}
 .alignleft{text-align:left!important;}
-.block{display:block;}
+.block{display:block!important;}
 .inlineblock{display:inline-block!important;}
 .nobg{background:none!important;}
 .nofloat{float:none!important;}
@@ -50,6 +50,7 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .marr5{margin-right:5px!important;}
 .marr15{margin-right:15px!important;}
 .marr20{margin-right:20px!important;}
+.marr25{margin-right:25px!important;}
 .marr30{margin-right:30px!important;}
 .marl5{margin-left:5px!important;}
 .marl20{margin-left:20px!important;}

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>各种弹出框</title>
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/ar-style.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme1.css" type="text/css">
+</head>
+<body>
+<!--导入记录  弹出层begin-->
+<div class="AppPop" style="left:50px;top:100px;width:400px;">
+  <div class="PopInner">
+    <div class="PopTitle">
+        <span>导入记录</span>
+        <span class="off">×</span>
+    </div>
+    <div class="PopMain clearfix">
+        <p class="Themetxt-color mart10  aligncenter">
+            <a href="#" class="a-link font14"><em class="icon icon-att"></em> 添加附件</a>
+            <a class="button marl30">上传</a>
+        </p>
+    </div>
+  </div>
+</div>
+<!--导入记录  弹出层over-->
+<!--导入记录  弹出层begin-->
+<div class="AppPop" style="left:50px;top:290px;width:400px;">
+  <div class="PopInner">
+    <div class="PopTitle">
+        <span>导入记录</span>
+        <span class="off">×</span>
+    </div>
+    <div class="PopMain clearfix font14">
+        <div class="loading"><img src="../img/ajax-loader.gif">导入进行中，请稍后...</div>
+        <p class="Themetxt-color mart10  aligncenter"><img src="../img/right.png" class="right">导入完毕！</p>
+        <p class="aligncenter mart20"><a class="button">确定</a></p>
+    </div>
+  </div>
+</div>
+<!--导入记录  弹出层over-->
+<!--考勤汇总  弹出层begin-->
+<div class="AppPop" style="left:50px;top:550px;width:400px;">
+  <div class="PopInner">
+    <div class="PopTitle">
+        <span>考勤汇总</span>
+        <span class="off">×</span>
+    </div>
+    <div class="PopMain clearfix font14">
+        <div class="loading"><img src="../img/ajax-loader.gif">汇总进行中，请稍后...</div>
+        <p class="Themetxt-color mart10  aligncenter"><img src="../img/right.png" class="right">汇总完毕！</p>
+        <p class="aligncenter mart20"><a class="button">确定</a></p>
+    </div>
+  </div>
+</div>
+<!--考勤汇总  弹出层over-->
+<!--考勤计算 弹出层begin-->
+<div class="AppPop" style="left:550px;top:100px;width:400px;">
+  <div class="PopInner">
+    <div class="PopTitle">
+        <span>考勤计算</span>
+        <span class="off">×</span>
+    </div>
+    <div class="PopMain clearfix">
+        <table class="PopTable marl20">
+            <tr>
+                <th class="Themetxt-color">开始日期</th>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>2013年</option>
+                        <option>2012年</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>12月</option>
+                        <option>11月</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>5日</option>
+                        <option>4日</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="Themetxt-color">结束日期</th>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>2013年</option>
+                        <option>2012年</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>12月</option>
+                        <option>11月</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="ThemeSelect">
+                        <option>5日</option>
+                        <option>4日</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="Themetxt-color">员工</th>
+                <td colspan="3">
+                    <!--搜索框begin-->
+                    <div class="search-area">
+                        <input type="text" class="search-int">
+                        <em class="line-y"></em>
+                        <a href="#" class="search-btn"><i class="app-icon ico-search"></i></a>
+                    </div>
+                    <!--搜索框over-->
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td colspan="3" style="height:10px;">（不填写默认计算所有员工）</td>
+            </tr>
+        </table>
+        <p class="alignright mart20 marr5"><a class="button">计算</a></p>
+    </div>
+  </div>
+</div>
+<!--考勤计算 弹出层over-->
+</body>
+</html>

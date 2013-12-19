@@ -7,6 +7,11 @@
 .TabClander th,.TabClander td{border-style:solid;border-width:1px;}
 .TabClander td span,.TabClander tbody td div p{color:#999;}
 .TabClander tbody td div p{line-height:20px;position: absolute;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;left:1px;bottom:0;width:95px;}
+.TabClander0f tbody td div{height:70px;padding:5px 0;}
+.TabClander0f tbody tr td .begin,.TabClander0f tbody tr td .end{position:absolute;bottom:5px;}
+.TabClander0f tbody tr td .begin{left:10px;}
+.TabClander0f tbody tr td .end{right:10px;}
+.TabClander0f tbody tr td p{position:relative;width:auto;line-height:40px;}
 .DataLi li{margin-right:8px;}
 .DataLi li:hover{cursor:inherit;}
 .DataLi li h2{line-height:25px;}
@@ -17,10 +22,10 @@
 .Pcard td span{color:#21812a}
 .Pcard td span.late{color:#a93535;}
 .ContractTab th,.ContractTab td{padding:10px 10px;}
-
-
-
-
+.PerMain{width:718px;min-height:600px;}
+.ARlist{width:750px;}
+.ARlist li{width:130px;margin:0 0 15px 6px;}
+.ARlist li .CardTop dl{width:60px;}
 
 
 
