@@ -18,7 +18,7 @@
 .DataLi li th{color:#999;padding-left:10px;}
 .Pcard thead th,.Pcard td{text-align:center;}
 .Pcard thead th{font-size:14px;height:40px;}
-.Pcard td{height:30px;color:#333;}
+.Pcard td{height:30px;color:#666;}
 .Pcard td span{color:#21812a}
 .Pcard td span.late{color:#a93535;}
 .ContractTab th,.ContractTab td{padding:10px 10px;}
@@ -26,6 +26,29 @@
 .ARlist{width:750px;}
 .ARlist li{width:130px;margin:0 0 15px 6px;}
 .ARlist li .CardTop dl{width:60px;}
+.PerListmini li{width:80px;position:relative;margin:0 8.5px 20px 24px;overflow:hidden;}
+.PerListmini li .makeitem{position:absolute;right:-90px;top:0;width:100%;height:100%;line-height:20px;transition:0.4s;}
+.PerListmini li .makeitem a{margin-top:5px;padding-left:10px;}
+.PerListmini li:hover .makeitem{right:0;transition:0.4s;}
+.PerListmini li .CardTop dl{width:80px;margin:0;text-align: center;}
+.bigcard li{padding:40px;margin:20px 15px 0 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

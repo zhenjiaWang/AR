@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>汇总维护-按人查看图形</title>
+    <link rel="stylesheet" href="../../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../../css/ar-style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/theme1.css" type="text/css">
+</head>
+<body>
+<div class="AppLayout border-solid">
+    <!--app title begin-->
+    <div class="AppTopBar border-solid border-bottom clearfix">
+        <div class="TopBarl floatleft">
+            <span class="AppLogo"><img src="../../img/ico-8.png"></span>
+            <em class="font18">员工考勤</em>
+        </div>
+    </div>
+    <!--app title over-->
+    <!--一级导航begin-->
+    <div class="AppNav border-solid border-bottom clearfix">
+        <ul class="Nav-ul font14 clearfix">
+            <li class="current"><a href="#">考勤维护</a></li>
+            <li><a href="#">考勤查看</a></li>
+            <li><a href="#">报表统计</a></li>
+            <li><a href="#">我的考勤</a></li>
+            <li class="AppSet"><a href="#"><em class="icon icon-set"></em>应用设置</a></li>
+        </ul>
+    </div>
+    <!--一级导航over-->
+    <!--二级导航begin-->
+    <div class="AppNavT border-solid border-bottom clearfix">
+        <ul class="font16 clearfix floatleft">
+            <li><a href="#">考勤日历</a></li>
+            <li><a href="#">刷卡记录</a></li>
+            <li class="current"><a href="#">汇总维护</a></li>
+        </ul>
+    </div>
+    <!--二级导航over-->
+    <!--app 主要区域begin-->
+    <div class="AppMain clearfix">
+        <div class="clearfix mart10">
+            <div class="search-area floatright marr25">
+                <input type="text" class="search-int">
+                <em class="line-y"></em>
+                <a title="清除搜索内容" class="off-clear" href="#">×</a>
+                <a class="search-btn" href="#"><i class="app-icon ico-search"></i></a>
+                <!--搜索结果框begin-->
+                <div class="SearchResults" style="display:none;">
+                    <dl>
+                        <div class="loading"><img src="../../img/ajax-loader.gif">数据加载中，请稍后...</div><!--这个可以到处用-->
+                        <dd><a href="#"><em>@王振佳将您</em>负责的任务填写完整个人信息托付给了王振佳托付给了王振佳</a></dd>
+                        <dd><a href="#">务填写完整个人信息托付给了王振佳</a></dd>
+                        <dd><a href="#">将您负责的任务填写完整个人信息托付给了王振佳</a></dd>
+                        <dd><a href="#">@王振佳将您负责的任务填写完整个人信息托付给了王振佳</a></dd>
+                        <dd><a href="#">务填写完整个人信息托付给了王振佳</a></dd>
+                    </dl>
+                </div>
+                <!--搜索结果框over-->
+            </div>
+            <!--按钮组begin-->
+            <div class="floatleft marl20 clearfix">
+                <a class="button">汇总锁定</a>
+            </div>
+            <!--按钮组over-->
+            <!--排序begin-->
+            <div class="AppSequence floatright marr10 current"><!--加current下拉框显示-->
+                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图形</a>
+                <em class="app-icon ico-toogle"></em>
+                <div class="down-list">
+                    <ul>
+                        <li>列表</li>
+                        <li>图形</li>
+                    </ul>
+                </div>
+              </div>
+            <!--排序over-->
+        </div>
+        <!--个人考勤日历 begin-->
+        <div class="AR-Clander mart20">
+            <!--切换日历beign-->
+            <div class="CLswitch aligncenter clearfix">
+                <a href="#" class="floatleft font14 nomar marr20 Themetxt-color"><em class="icon icon-back"></em>返回</a>
+                <span class="floatleft marr20">
+                    <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
+                    <span class="Clmonth Clmonth2"><!---Clmonth加current 你懂得！-->
+                        <em>2013年12月</em>
+                        <dl class="clearfix">
+                            <dd>2013年1月</dd>
+                            <dd>2013年2月</dd>
+                            <dd>2013年3月</dd>
+                            <dd>2013年4月</dd>
+                            <dd>2013年5月</dd>
+                            <dd>2013年6月</dd>
+                            <dd>2013年7月</dd>
+                            <dd>2013年8月</dd>
+                            <dd>2013年9月</dd>
+                            <dd>2013年10月</dd>
+                            <dd>2013年11月</dd>
+                            <dd>2013年12月</dd>
+                        </dl>
+                    </span>
+                    <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
+                </span>
+                <span class="font14 floatleft">
+                    <span class="Themetxt-color"><em class="icon icon-user"></em> 王振佳</span>
+                    <span class="marl20 marr20">技术开发部CTO</span>
+                    <span>早4晚12</span>
+                </span>
+                <span class="font14 floatright">应出勤：21天【非全勤】</span>
+            </div>
+            <!--切换日历over-->
+        </div>
+        <!--个人考勤日历 begin-->
+        <!--图形展示begin-->
+        <div class="PerMain ARlist mart20 floatleft">
+            <ul class="PerList PerListmini clearfix">
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>工作</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>旷工</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>请假</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>病假</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>婚假</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>正常工休</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>正常工休</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="CardTop clearfix">
+                      <dl class="floatleft">
+                          <dd><span>正常工休</span></dd>
+                          <dd class="Themetxt-color">10天</dd>
+                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
+                  </div>
+                </li>
+            </ul>
+            <!--分页begin-->
+            <div class="pagenation alignright">
+                <div class="pageTop">
+                    <a href="#" class="prev no">&lt;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <span class="current">3</span>
+                    <a href="#">4</a>
+                    <a href="#">9</a>
+                    <span>...</span>
+                    <a href="#" class="no">10</a>
+                    <a href="#" class="next">&gt;</a>
+                </div>
+                <p class="pageBt"><span>共<em>14567</em>页</span><a href="#">最后一页</a></p>
+            </div>
+            <!--分页over-->
+        </div>
+        <!--图形展over-->
+    </div>
+    <!--app 主要区域over-->
+</div>
+<!--编辑考勤记录  弹出层begin-->
+<div class="AppPop" style="top:400px;width:300px;left:50%;margin-left:-150px;">
+  <div class="PopInner">
+    <div class="PopTitle">
+        <span>编辑此条记录</span>
+        <span class="off">×</span>
+    </div>
+    <div class="PopMain clearfix">
+        <p class="aligncenter font14">工作</p>
+        <p class="aligncenter mart20">
+            考勤值
+            <input type="text" class="ThemeInput marl10 marr10 width-50">
+            天
+        </p>
+        <p class="Themetxt-color mart20 aligncenter">
+            <a class="button">上传</a>
+            <a class="button quit marl30">取消</a>
+        </p>
+    </div>
+  </div>
+</div>
+<!--编辑考勤记录  弹出层over-->
+</body>
+</html>

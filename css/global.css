@@ -76,6 +76,10 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .font30{font-size:30px!important;}
 .l_th{text-decoration:line-through!important;}
 .txt_hidden{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
+/*width*/
+.width-50{width:50px!important;}
+.width-100{width:100px!important;}
+.width-120{width:120px!important;}
 /*clear*/
 .clear{clear:both;line-height:0;height:0;font-size:0;}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}

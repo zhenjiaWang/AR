@@ -6,12 +6,12 @@
 .no-rl-boder{border-width:1px 0;}
 .border-bottom{border-width:0 0 1px 0;}
 /*框架外层样式*/
-.AppLayout{width:768px;margin:30px auto;min-height:750px;}
+.AppLayout{width:768px;margin:30px auto;}
 .AppTopBar{height:50px;line-height:50px;padding:0 10px 0 15px;}
 .AppLogo img{width:24px;height:24px;margin:13px 10px 0 0;}
 .TopBarl{height:50px;line-height:50px;}
 .TopBarl em{position:relative;top:-5px;}
-.AppMain{padding:10px;position:relative;z-index:5;}
+.AppMain{padding:10px;position:relative;z-index:5;min-height:600px;}
 /*导航*/
 .AppNav{padding:20px 10px 20px 0;height:35px;position: relative;z-index:20;}
 .Nav-ul li{float: left;width: auto;margin-left:10px;position:relative;}
@@ -41,6 +41,8 @@
 .invite{line-height:26px;padding-left:2px;}
 .icon-invite{background-position:0 -169px;}/*酒杯*/
 .icon-set{background-position:0 0;}/*设置*/
+.icon-move{background-position:0 -182px;}/*移动*/
+.icon-move:hover,a:hover .icon-move{background-position:-14px -182px;}/*移动*/
 .icon-set:hover,.Nav-ul li.AppSet a .icon-set{background-position:-14px 0;}
 .Nav-ul li.AppSet a .icon-set{top:-1px;left:-2px;}
 .icon-card{background-position:0 -196px;}/*银行卡*/
@@ -69,9 +71,11 @@ a:hover .icon-por,.icon-por:hover{background-position:-14px -280px;}/*档案袋*
 .icon-back{background-position:0 -392px;}
 .icon-back:hover,a:hover .icon-back{background-position:-14px -392px;}
 .right{vertical-align:middle;margin-right:7px;}
+.icon-re{background-position:0 -406px;}
+.icon-re:hover,a:hover .icon-re{background-position:-14px -406px;}
 /*搜索框插件*/
-.AppSequence{width:90px;height:30px;position: relative;}
-.AppSequence a{line-height:30px;color:#000;}
+.AppSequence{min-width:90px;height:30px;position: relative;z-index:20;}
+.AppSequence a{line-height:20px;color:#000;}
 .AppSequence .ico-toogle{margin-left:2px;}
 .off-clear{right:38px;top:5px;color:#959595;background:#fff;position: absolute;font-size:14px;}
 .off-clear:hover{color:#333;}
@@ -174,7 +178,7 @@ select.edit{padding-bottom:2px;height:auto;}
 /*弹出层通用的table*/
 .PopTable th{padding-right:20px;text-align:right;font-size: 14px;}
 .PopTable td{height:40px;padding-left:5px;}
-
+.AppPop .PerListmini li{margin:0 8px 20px 16px;}
 
 
 
