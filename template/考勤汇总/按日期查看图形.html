@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>考勤考察-概况</title>
+    <title>汇总维护-按日期查看图形</title>
     <link rel="stylesheet" href="../../css/global.css" type="text/css">
     <link rel="stylesheet" href="../../css/styles.css" type="text/css">
     <link rel="stylesheet" href="../../css/ar-style.css" type="text/css">
@@ -22,8 +22,8 @@
     <!--一级导航begin-->
     <div class="AppNav border-solid border-bottom clearfix">
         <ul class="Nav-ul font14 clearfix">
-            <li><a href="#">考勤维护</a></li>
-            <li class="current"><a href="#">考勤查看</a></li>
+            <li class="current"><a href="#">考勤维护</a></li>
+            <li><a href="#">考勤查看</a></li>
             <li><a href="#">报表统计</a></li>
             <li><a href="#">我的考勤</a></li>
             <li class="AppSet"><a href="#"><em class="icon icon-set"></em>应用设置</a></li>
@@ -33,9 +33,9 @@
     <!--二级导航begin-->
     <div class="AppNavT border-solid border-bottom clearfix">
         <ul class="font16 clearfix floatleft">
-            <li class="current"><a href="#">考勤概况</a></li>
-            <li><a href="#">个人考勤</a></li>
-            <li><a href="#">部门考勤</a></li>
+            <li><a href="#">考勤日历</a></li>
+            <li><a href="#">刷卡记录</a></li>
+            <li class="current"><a href="#">汇总维护</a></li>
         </ul>
     </div>
     <!--二级导航over-->
@@ -60,34 +60,53 @@
                 </div>
                 <!--搜索结果框over-->
             </div>
+            <!--按钮组begin-->
+            <div class="floatleft marl20 clearfix">
+                <a class="button">汇总锁定</a>
+            </div>
+            <!--按钮组over-->
             <!--排序begin-->
-            <div class="AppSequence floatright marr20 current"><!--加current下拉框显示-->
-                <a href="#">按姓名排序</a>
+            <div class="AppSequence floatright marr10 current"><!--加current下拉框显示-->
+                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图形</a>
                 <em class="app-icon ico-toogle"></em>
                 <div class="down-list">
                     <ul>
-                        <li>按部门排序</li>
-                        <li>按班组排序</li>
+                        <li>列表</li>
+                        <li>图形</li>
                     </ul>
                 </div>
               </div>
             <!--排序over-->
         </div>
-        <!--个人考勤人历 begin-->
+        <!--个人考勤日历 begin-->
         <div class="AR-Clander mart20">
-            <!--切换人历beign-->
+            <!--切换日历beign-->
             <div class="CLswitch aligncenter clearfix">
                 <a href="#" class="floatleft font14 nomar marr20 Themetxt-color"><em class="icon icon-back"></em>返回</a>
                 <span>
                     <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
-                    <span class="Clmonth Clmonth2 current"><!---Clmonth加current 你懂得！-->
+                    <span class="Clmonth Clmonth2"><!---Clmonth加current 你懂得！-->
                         <em>2013年12月</em>
+                        <dl class="clearfix">
+                            <dd>2013年1月</dd>
+                            <dd>2013年2月</dd>
+                            <dd>2013年3月</dd>
+                            <dd>2013年4月</dd>
+                            <dd>2013年5月</dd>
+                            <dd>2013年6月</dd>
+                            <dd>2013年7月</dd>
+                            <dd>2013年8月</dd>
+                            <dd>2013年9月</dd>
+                            <dd>2013年10月</dd>
+                            <dd>2013年11月</dd>
+                            <dd>2013年12月</dd>
+                        </dl>
                     </span>
                     <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
                 </span>
                 <span>
                     <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
-                    <span class="Clmonth Clmonth2"><!---Clmonth加current 你懂得！-->
+                    <span class="Clmonth Clmonth2 current"><!---Clmonth加current 你懂得！-->
                         <em>星期一</em>
                         <dl class="clearfix">
                             <dd>星期一</dd>
@@ -101,112 +120,107 @@
                     </span>
                     <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
                 </span>
-                <span class="Themetxt-color font14">工作</span>
             </div>
-            <!--切换人历over-->
+            <!--切换日历over-->
         </div>
-        <!--个人考勤人历 begin-->
-        <!--员工卡片begin-->
+        <!--个人考勤日历 begin-->
+        <!--图形展示begin-->
         <div class="PerMain ARlist mart20 floatleft">
-            <ul class="PerList clearfix">
+            <ul class="PerList PerListmini clearfix">
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo5.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>工作</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo2.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>旷工</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo1.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>请假</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo3.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>后勤部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>病假</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo5.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早7晚4</dd>
+                          <dd><span>婚假</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo5.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>正常工休</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo2.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>正常工休</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
                 <li>
                   <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo1.jpg"/></span>
                       <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
+                          <dd><span>正常工休</span></dd>
+                          <dd class="Themetxt-color">10人</dd>
                       </dl>
-                  </div>
-                </li>
-                <li>
-                  <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo3.jpg"/></span>
-                      <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>后勤部</dd>
-                          <dd class="Themetxt-color">早8晚5</dd>
-                      </dl>
-                  </div>
-                </li>
-                <li>
-                  <div class="CardTop clearfix">
-                      <span class="PerImg floatleft"><img src="../../img/photo5.jpg"/></span>
-                      <dl class="floatleft">
-                          <dd><span>王振佳</span></dd>
-                          <dd>技术研发部</dd>
-                          <dd class="Themetxt-color">早7晚4</dd>
-                      </dl>
+                      <span class="makeitem floatleft">
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make block"><em class="icon icon-re"></em> 清零</a>
+                      </span>
                   </div>
                 </li>
             </ul>
@@ -227,7 +241,7 @@
             </div>
             <!--分页over-->
         </div>
-        <!--员工卡片over-->
+        <!--图形展over-->
     </div>
     <!--app 主要区域over-->
 </div>

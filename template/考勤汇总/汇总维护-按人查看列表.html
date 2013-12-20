@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>刷卡记录-按日期2</title>
+    <title>考勤汇总-按人查看列表</title>
     <link rel="stylesheet" href="../../css/global.css" type="text/css">
     <link rel="stylesheet" href="../../css/styles.css" type="text/css">
     <link rel="stylesheet" href="../../css/ar-style.css" type="text/css">
@@ -34,8 +34,8 @@
     <div class="AppNavT border-solid border-bottom clearfix">
         <ul class="font16 clearfix floatleft">
             <li><a href="#">考勤日历</a></li>
-            <li class="current"><a href="#">刷卡记录</a></li>
-            <li><a href="#">汇总维护</a></li>
+            <li><a href="#">刷卡记录</a></li>
+            <li class="current"><a href="#">汇总维护</a></li>
         </ul>
     </div>
     <!--二级导航over-->
@@ -60,118 +60,100 @@
                 </div>
                 <!--搜索结果框over-->
             </div>
+            <!--按钮组begin-->
+            <div class="floatleft marl20 clearfix">
+                <a class="button">汇总锁定</a>
+            </div>
+            <!--按钮组over-->
             <!--排序begin-->
-            <div class="AppSequence floatright marr20 current"><!--加current下拉框显示-->
-                <a href="#">按姓名排序</a>
+            <div class="AppSequence floatright marr10 current"><!--加current下拉框显示-->
+                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列表</a>
                 <em class="app-icon ico-toogle"></em>
                 <div class="down-list">
                     <ul>
-                        <li>按部门排序</li>
-                        <li>按班组排序</li>
-                        <li>按状态排序</li>
-                        <li>上班刷卡升序</li>
-                        <li>下班刷卡降序</li>
+                        <li>列表</li>
+                        <li>图形</li>
                     </ul>
                 </div>
               </div>
             <!--排序over-->
-            <!--按钮组begin-->
-            <div class="btn-group floatrleft marl20 clearfix">
-                <a class="button">计算考勤</a>
-                <a class="button">锁定考勤</a>
-                <a class="button">生成汇总</a>
-            </div>
-            <!--按钮组over-->
         </div>
         <!--个人考勤日历 begin-->
         <div class="AR-Clander mart20">
             <!--切换日历beign-->
             <div class="CLswitch aligncenter clearfix">
                 <a href="#" class="floatleft font14 nomar marr20 Themetxt-color"><em class="icon icon-back"></em>返回</a>
-                <span>
+                <span class="floatleft marr20">
                     <a href="#" class="Themetxt-color"><em class="icon icon-ppprev"></em></a>
-                    <span class="Clmonth"><!---Clmonth加current 你懂得！-->
-                        <em>2013年12月19日</em>
+                    <span class="Clmonth Clmonth2"><!---Clmonth加current 你懂得！-->
+                        <em>2013年12月</em>
                         <dl class="clearfix">
-                            <dd>2010</dd>
-                            <dd>2012</dd>
-                            <dd>2013</dd>
-                            <dd>2014</dd>
-                            <dd>2015</dd>
-                            <dd>2016</dd>
-                            <dd>2017</dd>
-                            <dd>2018</dd>
-                            <dd>2019</dd>
-                            <dd>2020</dd>
-                            <dd>2021</dd>
+                            <dd>2013年1月</dd>
+                            <dd>2013年2月</dd>
+                            <dd>2013年3月</dd>
+                            <dd>2013年4月</dd>
+                            <dd>2013年5月</dd>
+                            <dd>2013年6月</dd>
+                            <dd>2013年7月</dd>
+                            <dd>2013年8月</dd>
+                            <dd>2013年9月</dd>
+                            <dd>2013年10月</dd>
+                            <dd>2013年11月</dd>
+                            <dd>2013年12月</dd>
                         </dl>
                     </span>
                     <a href="#" class="Themetxt-color"><em class="icon icon-nnnext"></em></a>
                 </span>
+                <span class="font14 floatleft">
+                    <span class="Themetxt-color"><em class="icon icon-user"></em> 王振佳</span>
+                    <span class="marl20 marr20">技术开发部CTO</span>
+                    <span>早4晚12</span>
+                </span>
+                <span class="font14 floatright">应出勤：21天【非全勤】</span>
             </div>
             <!--切换日历over-->
-
         </div>
         <!--个人考勤日历 begin-->
         <table class="Pcard mart10" width="100%">
                 <thead>
                     <tr>
-                        <th>姓名</th>
-                        <th width="120">部门</th>
-                        <th>班组</th>
-                        <th>上班刷卡</th>
-                        <th>下班刷卡</th>
-                        <th width="70">原因</th>
+                        <th>考勤项目</th>
+                        <th>考勤值</th>
+                        <th width="160">操作</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>王振佳</td>
-                        <td>开发部</td>
-                        <td>早8晚5</td>
-                        <td>7:59</td>
-                        <td>6:01</td>
+                        <td>工作</td>
+                        <td>10天</td>
+                        <td>
+                            <a href="#" class="Themetxt-color a-make"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make marl10"><em class="icon icon-re"></em> 清零</a>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>迟到</td>
+                        <td>10次</td>
+                        <td>
+                            <a href="#" class="Themetxt-color a-make"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make marl10"><em class="icon icon-re"></em> 清零</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>刘德华</td>
-                        <td>市场规划发部</td>
-                        <td>早8晚5</td>
-                        <td>7:59</td>
-                        <td>6:01</td>
-                        <td>离婚</td>
+                        <td>早退</td>
+                        <td>10次</td>
+                        <td>
+                            <a href="#" class="Themetxt-color a-make"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make marl10"><em class="icon icon-re"></em> 清零</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>王振佳</td>
-                        <td>开发部</td>
-                        <td>早8晚5</td>
-                        <td>7:59</td>
-                        <td>6:01</td>
-                        <td>迟到</td>
-                    </tr>
-                    <tr>
-                        <td>刘德华</td>
-                        <td>市场规划发部</td>
-                        <td>早8晚5</td>
-                        <td>7:59</td>
-                        <td>6:01</td>
-                        <td>离婚</td>
-                    </tr>
-                    <tr>
-                        <td>王振佳</td>
-                        <td>开发部</td>
-                        <td>早8晚5</td>
-                        <td>7:59</td>
-                        <td>6:01</td>
-                        <td>婚假</td>
-                    </tr>
-                    <tr>
-                        <td>王振佳</td>
-                        <td>开发部</td>
-                        <td>早8晚5</td>
-                        <td>7:59</td>
-                        <td>6:01</td>
-                        <td>婚假</td>
+                        <td>旷工</td>
+                        <td>1天</td>
+                        <td>
+                            <a href="#" class="Themetxt-color a-make"><em class="icon icon-edit"></em> 修改</a>
+                            <a href="#" class="Themetxt-color a-make marl10"><em class="icon icon-re"></em> 清零</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
